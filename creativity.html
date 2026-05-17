@@ -1,0 +1,101 @@
+<!-- Gym Features Page Web Programming Final Project By Harmony Bato-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harmony Health &amp; Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/harmonylogo.ico">
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Gym Features Page -->
+<body id="page-features">
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html"><img src="imgs/harmonylogo.jpg" alt="Harmony Health and Fitness Logo"></a>
+    <div>
+      <a href="index.html">Our Mission</a>
+      <a href="membership.html">Join Us!</a>
+      <a href="creativity.html" class="active">Gym Features</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div id="header">
+    <h1>Gym Features</h1>
+    <h3>Explore Everything We Have to Offer</h3>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+
+    <!-- Image Carousel -->
+    <div class="section-box">
+      <h2>Facility Photo Tour</h2>
+      <p>Take a look around our space!</p>
+
+      <div id="slideshow-box">
+        <img id="slideshow-img" src="imgs/widepilates.webp" alt="Facility Photo">
+        <p id="slideshow-caption">Pilates Studio</p>
+      </div>
+      <br>
+      <input class="btn" type="button" value="Back" onclick="doBack()">
+      <input class="btn" type="button" value="Next" onclick="doNext()">
+    </div>
+
+    <!-- Class Schedule -->
+    <div class="section-box">
+      <h2>Weekly Class Schedule</h2>
+      <p>Browse our weekly program schedule below.</p>
+      <img class="calendar-wide" src="imgs/calenderwide.png" alt="Weekly Class Schedule">
+      <img class="calendar-small" src="imgs/calendersmall.png" alt="Weekly Class Schedule">
+    </div>
+
+    <!-- What We Offer -->
+    <div class="section-box">
+      <h2>What We Offer</h2>
+
+      <div class="program-card">
+        <div class="program-header">
+          <h3>Pilates with Clara Bennett</h3>
+        </div>
+        <p>Mat and Reformer classes for all levels, focused on core strength, posture, and flexibility.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-header">
+          <h3>Yoga with Priya Sharma</h3>
+        </div>
+        <p>Hatha, Vinyasa, and Restorative sessions to build balance, mindfulness, and mobility.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-header">
+          <h3>Boxing &amp; MMA with Rosa Delgado</h3>
+        </div>
+        <p>Women's self-defense and combat fitness in a safe, structured environment.</p>
+      </div>
+
+      <div class="program-card">
+        <div class="program-header">
+          <h3>Consultations &amp; Workshops with Dr. Aisha Okonkwo</h3>
+        </div>
+        <p>One-on-one or group sessions with Dr. Aisha Okonkwo covering nutrition, hormonal health, and lifestyle goals.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <p>Harmony Health &amp; Fitness &mdash; 123 Harmony Street, New York &mdash; Open 7 Days a Week &mdash; Women Only</p>
+  </div>
+
+</body>
+</html>

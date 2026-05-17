@@ -1,0 +1,140 @@
+<!-- Membership Registration Page Web Programming Final Project By Harmony Bato-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harmony Health &amp; Fitness</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/harmonylogo.ico">
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Membership Registration Page -->
+<body id="page-membership">
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html"><img src="imgs/harmonylogo.jpg" alt="Harmony Health and Fitness Logo"></a>
+    <div>
+      <a href="index.html">Our Mission</a>
+      <a href="membership.html" class="active">Join Us!</a>
+      <a href="creativity.html">Gym Features</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div id="header">
+    <h1>Membership Registration</h1>
+    <h3>Join Our Community Today!</h3>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+
+    <!-- Membership Information Form -->
+    <div class="section-box">
+      <h2>Sign Up</h2>
+      <p>We are so glad you are here! Fill out the form below to begin your journey with Harmony Health &amp; Fitness.</p>
+
+      <form name="RegisterForm">
+
+      <!-- Name Input Field -->
+      <label>Full Name:</label>
+      <input name="fullName" type="text" size="40">
+      <div id="fullNameError" class="error-msg"></div>
+
+      <!-- Email Input Field -->
+      <label>Email Address:</label>
+      <input name="email" type="text" size="40">
+      <div id="emailError" class="error-msg"></div>
+
+      <!-- Phone Number Input Field -->
+      <label>Phone Number (e.g. 555-867-5309):</label>
+      <input name="phone" type="text" size="40">
+      <div id="phoneError" class="error-msg"></div>
+
+      <!-- Age Input Field -->
+      <label>Age:</label>
+      <input name="age" type="number" min="18" max="99">
+      <div id="ageError" class="error-msg"></div>
+
+      <!-- Membership Type Dropdown -->
+      <label>Membership Type:</label>
+      <select name="membershipType">
+        <option value="">-- Select One --</option>
+        <option value="basic">Basic — Classes &amp; Open Floor Access</option>
+        <option value="standard">Standard — Classes, Open Floor &amp; 1 Monthly Consultation</option>
+        <option value="premium">Premium — Unlimited Classes, Open Floor &amp; Unlimited Consultations</option>
+      </select>
+
+      <!-- Membership Error Message -->
+      <div id="membershipError" class="error-msg"></div>
+
+      <!-- Fitness Goals Textarea -->
+      <label>Fitness Goals:</label>
+      <textarea name="fitnessGoals" rows="4" cols="40" placeholder="Tell us about your fitness goals..."></textarea>
+      
+      <!-- Fitness Goals Error Message -->
+      <div id="fitnessGoalsError" class="error-msg"></div>
+
+      <!-- Programs Checkbox Group -->
+      <label>Which programs interest you most? (Select all that apply)</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="yoga"> Yoga
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="pilates"> Pilates
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="mma"> MMA
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="nutritional-guidance"> Nutritional Guidance
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="general-exercise"> General Exercise
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="programs" value="boxing"> Boxing
+          </label>
+        </div>
+
+        <!-- Programs Error Message -->
+        <div id="programsError" class="error-msg"></div>
+
+        <!-- Referral Source Dropdown -->
+        <label>How did you hear about us?</label>
+        <select name="referral">
+          <option value="">-- Select One --</option>
+          <option value="friend-family">Friend / Family</option>
+          <option value="google">Google</option>
+          <option value="social-media">Social Media</option>
+          <option value="other">Other</option>
+        </select>
+
+        <!-- Referral Source Error Message -->
+        <div id="referralError" class="error-msg"></div>
+
+        <br>
+
+        <!-- Submit and Clear Buttons -->
+        <input type="button" value="Submit Registration" onclick="doSubmit()">
+        <input type="button" value="Clear Form" onclick="doClear()">
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Harmony Health &amp; Fitness &mdash; 123 Harmony Street, New York &mdash; Open 7 Days a Week &mdash; Women Only</p>
+  </div>
+
+</body>
+</html>
